@@ -7,12 +7,6 @@ const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 interface Question {
   question: string;
   options: string[];
